@@ -52,6 +52,7 @@
     "dist"
   ],
   "dependencies": {
-    "react-autowhatever": "^10.2.1"
+    "react-autowhatever": "^10.2.1",
+    "search-operators": "^1.0.8"
   }
 }
