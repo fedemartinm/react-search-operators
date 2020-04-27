@@ -7,6 +7,7 @@
     "prop-types": "^15.7.2",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-github-btn": "^1.1.1",
     "react-scripts": "file:../node_modules/react-scripts",
     "react-search-operators": "file:..",
     "react-syntax-highlighter": "^12.2.1"
