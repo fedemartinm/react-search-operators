@@ -7,10 +7,8 @@ IntroductionExample.description =
    and filters before a request. Try using one of these operators: +exact \
    -exclude "exact phrase".'
 IntroductionExample.source =
-  'https://github.com/fedemartinm/react-search-operators\
-  /blob/master/example/src/Examples/Introduction/App.js'
+  'https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Introduction/App.js'
 IntroductionExample.raw =
-  'https://raw.githubusercontent.com/fedemartinm/react-search-operators\
-  /master/example/src/Examples/Introduction/App.js'
+  'https://raw.githubusercontent.com/fedemartinm/react-search-operators/master/example/src/Examples/Introduction/App.js'
 
 export default IntroductionExample
