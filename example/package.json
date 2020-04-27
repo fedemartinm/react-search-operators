@@ -8,7 +8,8 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "react-search-operators": "file:.."
+    "react-search-operators": "file:..",
+    "react-syntax-highlighter": "^12.2.1"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
