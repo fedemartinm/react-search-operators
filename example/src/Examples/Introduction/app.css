@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.app pre {
+  font-size: 12px;
+  padding: 0 0.5em;
+  max-height: 300px;
+  overflow-y: scroll;
+}
