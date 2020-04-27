@@ -1,0 +1,17 @@
+@import './theme.module.scss';
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page {
+  background-color: $lightBackColor;
+}
+
+//Dark theme
+:global(.theme-dark) {
+  & .page {
+    background-color: $darkBackColor;
+  }
+}

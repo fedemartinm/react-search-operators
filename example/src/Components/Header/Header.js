@@ -1,8 +1,8 @@
 import GitHubButton from 'react-github-btn'
 import GithubLogo from '../Github/Logo'
 import React from 'react'
+import Selector from '../Theme/Selector'
 import styles from './header.module.css'
-
 export default () => (
   <header className={styles.header}>
     <h2>React Search Operators</h2>
@@ -26,6 +26,7 @@ export default () => (
       </GitHubButton>
     </div>
     <div className={styles.githubLink}>
+      <Selector />
       <GithubLogo />
       <a href={'https://github.com/fedemartinm/react-search-operators/'}>
         View on GitHub

@@ -3,7 +3,7 @@ import External from './External'
 import Loading from '../Loading/Loading'
 import PropTypes from 'prop-types'
 import React from 'react'
-import styles from './example.module.css'
+import styles from './example.module.scss'
 import useRawPage from '../../Hooks/useRawPage'
 
 const Example = ({ component: Component }) => {

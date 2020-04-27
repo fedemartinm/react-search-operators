@@ -1,0 +1,15 @@
+@import '../../App/theme.module.scss';
+
+footer {
+  padding: 40px 0px 10px;
+  font-size: 14px;
+  color: $lightSecondaryFontColor;
+  text-align: center;
+}
+
+//Dark theme
+:global(.theme-dark) {
+  & footer {
+    color: $darkSecondaryFontColor;
+  }
+}

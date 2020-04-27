@@ -1,4 +1,4 @@
-import './footer.module.css'
+import './footer.module.scss'
 
 import React from 'react'
 

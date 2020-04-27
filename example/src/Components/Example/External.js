@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './example.module.css'
+import styles from './example.module.scss'
 export default ({ to }) => {
   return (
     <a className={styles.external} href={to} target='_blank'>
