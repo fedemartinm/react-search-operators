@@ -1,0 +1,30 @@
+.example {
+  border: 1px solid #a9a9a9;
+  border-radius: 0.25em;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  overflow: scroll;
+}
+.example > div {
+  flex: 1 1 0;
+}
+
+.section {
+  padding: 0px 20px;
+  color: #494949;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.external {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+}
+.external:hover {
+  text-decoration: underline;
+}
+.external svg {
+  stroke: rgb(0, 110, 255);
+  vertical-align: middle;
+}

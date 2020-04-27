@@ -1,0 +1,8 @@
+.code {
+  font-size: 12px;
+  margin: 0px;
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  border: 1px dotted #dadada;
+  /*white-space: pre-wrap;*/
+}
