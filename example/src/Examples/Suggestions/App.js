@@ -38,7 +38,6 @@ const App = () => {
         text={text}
         onTextChange={setText}
         suggestions={suggestions}
-        suggestionAs={'b'}
         parserOptions={options}
         onSelect={select}
       />

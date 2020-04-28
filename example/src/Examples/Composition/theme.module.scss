@@ -2,16 +2,30 @@
 
 .container {
   position: relative;
+  width: 300px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+.icon svg {
+  flex: 1 1;
 }
 
 .input {
   width: 240px;
   height: 20px;
   line-height: 30px;
-  padding: 5px 10px;
+  padding: 10px 20px 10px 40px;
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
-  border: 1px solid #139ea3;
+  border: 1px solid #1091b1;
   box-sizing: content-box;
 }
 
@@ -31,9 +45,9 @@
 .itemsContainerOpen {
   display: block;
   position: absolute;
-  top: 31px;
-  width: 260px;
-  border: 1px solid #139ea3;
+  top: 41px;
+  width: 300px;
+  border: 1px solid #1091b1;
   background-color: #fff;
   font-size: 16px;
   line-height: 1.25;
@@ -52,10 +66,6 @@
   color: #777;
   cursor: pointer;
   padding: 10px 20px;
-}
-
-.itemHighlighted {
-  background-color: #ddd;
 }
 
 //Dark theme
