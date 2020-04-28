@@ -1,14 +1,13 @@
 @import '../../App/theme.module.scss';
 
 .example {
-  border: 1px solid #a9a9a9;
-  border-radius: 0.25em;
   display: flex;
   flex-wrap: wrap-reverse;
   overflow: scroll;
+  flex: 1;
 }
 .example > div {
-  flex: 1 1 0;
+  flex: 1;
 }
 
 .section {

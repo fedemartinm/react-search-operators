@@ -1,28 +1,26 @@
 import { LIGHT } from '../Theme/consts'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
-import dark from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark'
-import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript'
-import light from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-light'
-import styles from './code.module.css'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
+import styleCode from './code.module.css'
+import styleDark from 'react-syntax-highlighter/dist/esm/styles/prism/atom-dark'
+import styleLight from 'react-syntax-highlighter/dist/esm/styles/prism/prism'
 import useTheme from '../../Hooks/useTheme'
 
-SyntaxHighlighter.registerLanguage('javascript', js)
+SyntaxHighlighter.registerLanguage('jsx', jsx)
 
 const Code = ({ code }) => {
   const theme = useTheme()
-  const highlighter = theme === LIGHT ? light : dark
+  const highlighter = theme === LIGHT ? styleLight : styleDark
   return (
-    <div>
-      <SyntaxHighlighter
-        className={styles.code}
-        language='javascript'
-        style={highlighter}
-      >
-        {code}
-      </SyntaxHighlighter>
-    </div>
+    <SyntaxHighlighter
+      className={styleCode.code}
+      language='jsx'
+      style={highlighter}
+    >
+      {code}
+    </SyntaxHighlighter>
   )
 }
 Code.defaultProps = {

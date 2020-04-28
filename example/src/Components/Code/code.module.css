@@ -1,8 +1,13 @@
 .code {
-  font-size: 12px;
+  font-size: 14px !important;
+  font-weight: normal;
   margin: 0px;
-  border-top-left-radius: 0.25em;
+  border-radius: 0.25em;
   border-bottom-left-radius: 0.25em;
-  border: 1px dotted #dadada;
+  /*  border: 1px dotted #dadada; */
+  align-items: stretch;
+  max-height: 400px;
+  overflow-y: scroll;
+  /*height: 100%;
   /*white-space: pre-wrap;*/
 }
