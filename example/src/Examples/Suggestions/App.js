@@ -23,12 +23,12 @@ const App = () => {
       repo: 'this',
     },
   ]
-  //On select sugget, change search applying operation
+  //On select suggest, change search applying operation
   const select = (e) => {
     console.log('Entre', e)
     setText(`in:${e.repo} ${text}`)
   }
-  //Tell parser that in is a valid match operand
+  //Tell to parser that 'in' is a valid match operand
   const options = {
     keys: ['in'],
   }
@@ -38,6 +38,7 @@ const App = () => {
         text={text}
         onTextChange={setText}
         suggestions={suggestions}
+        suggestionAs={'b'}
         parserOptions={options}
         onSelect={select}
       />
