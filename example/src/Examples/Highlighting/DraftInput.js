@@ -29,10 +29,12 @@ const DraftInput = React.forwardRef((props, ref) => {
   const editorRef = useRef()
   const [state, setState] = useState(EditorState.createEmpty())
 
+  const hash = JSON.stringify(tokens)
   //Highlight syntax
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setState(highlight(state, tokens))
-  }, [JSON.stringify(tokens)])
+  }, [hash])
 
   //Fix scroll on delete all
   useEffect(() => {
@@ -83,9 +85,9 @@ const DraftInput = React.forwardRef((props, ref) => {
   )
 })
 
-/**
- * Format, limit text on paste
- */
+/* eslint-disable no-control-regex */
+// Format, limit text on paste
+// Prevent control characters
 function handleAsText(onChange) {
   return (text, html, state) => {
     const currentLength = state.getCurrentContent().getPlainText().length
@@ -101,5 +103,6 @@ function handleAsText(onChange) {
     return true
   }
 }
+/* eslint-enable no-control-regex */
 
 export default DraftInput

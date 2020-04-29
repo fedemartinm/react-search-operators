@@ -18,6 +18,6 @@ export default function useRawPage(url) {
       .catch((error) => {
         setState({ loading: false, page: 'Error loading page...' })
       })
-  }, [])
+  }, [url])
   return state
 }

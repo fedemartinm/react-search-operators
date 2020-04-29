@@ -5,7 +5,11 @@ const navigate = () => {
 }
 
 const Suggestion = ({ text }) => {
-  return <a onMouseDown={navigate}>{text}</a>
+  return (
+    <a href='#' onMouseDown={navigate}>
+      {text}
+    </a>
+  )
 }
 
 export default Suggestion

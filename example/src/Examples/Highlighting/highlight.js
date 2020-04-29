@@ -39,7 +39,7 @@ function highlight(state, tokens) {
     'change-inline-style'
   )
 
-  tokens.map(({ type, startOffset, endOffset }) => {
+  tokens.forEach(({ type, startOffset, endOffset }) => {
     editingState = EditorState.forceSelection(
       editingState,
       originalSelection.merge({
