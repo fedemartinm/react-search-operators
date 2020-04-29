@@ -7,7 +7,7 @@ Composition.description =
   'and default components (as and suggestionAs). In this example we overwrite ' +
   'the theme by adding light and dark modes.'
 Composition.source =
-  'https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Composition/App.js'
+  'https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Composition/'
 Composition.raw =
   'https://raw.githubusercontent.com/fedemartinm/react-search-operators/master/example/src/Examples/Composition/App.js'
 

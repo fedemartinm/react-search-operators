@@ -9,7 +9,7 @@ Suggestions.description =
   'in a controlled way.'
 
 Suggestions.source =
-  'https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Suggestions/App.js'
+  'https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Suggestions/'
 Suggestions.raw =
   'https://raw.githubusercontent.com/fedemartinm/react-search-operators/master/example/src/Examples/Suggestions/App.js'
 
