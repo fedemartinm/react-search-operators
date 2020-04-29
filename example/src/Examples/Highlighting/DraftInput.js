@@ -40,7 +40,7 @@ const DraftInput = React.forwardRef((props, ref) => {
   useEffect(() => {
     if (!text) {
       const editorDiv = ReactDOM.findDOMNode(editorRef.current)
-      editorDiv.scroll(0, 0)
+      editorDiv.scrollLeft = 0
     }
   }, [text])
 

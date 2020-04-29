@@ -1,5 +1,6 @@
 import 'react-search-operators/dist/index.css'
 import './app.css'
+import './polyfill'
 
 import DraftInput from './DraftInput'
 import React from 'react'

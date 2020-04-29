@@ -8,6 +8,10 @@ import React from 'react'
 import Suggestions from '../Examples/Suggestions'
 import { ThemeProvider } from '../Components/Theme/Provider'
 import styles from './app.module.scss'
+//Polyfills
+import 'core-js/features/object/assign'
+import 'core-js/features/promise'
+import 'whatwg-fetch'
 
 const App = () => {
   return (
