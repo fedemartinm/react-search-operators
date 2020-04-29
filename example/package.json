@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "core-js": "^3.6.5",
     "draft-js": "^0.11.5",
     "node-sass": "^4.14.0",
     "prop-types": "^15.7.2",
@@ -12,7 +13,8 @@
     "react-github-btn": "^1.1.1",
     "react-scripts": "file:../node_modules/react-scripts",
     "react-search-operators": "file:..",
-    "react-syntax-highlighter": "^12.2.1"
+    "react-syntax-highlighter": "^12.2.1",
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
