@@ -1,5 +1,63 @@
 # React Search Operators
-Search component based on search-operators
+Search component based on search-operators, where users can type search queries and apply filters.
+
+- complete set of operators 
+- sentence tokenization
+- complete theming freedom
+- highly customizable through composition
+
+
+Use this package when you want to parse a search query. If you don't need parse input and you need advanced features in suggestions maybe you are looking for [react-autosuggest](https://github.com/moroshko/react-autosuggest).
+
+### Installation
+```shell
+yarn add react-search-operators
+```
+
+or
+
+```shell
+npm install react-search-operators --save
+```
+
+### Basic Usage
+```javascript
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import Search from 'react-search-operators'
+
+const App = () => {
+  const [state, setState] = useState({})
+  console.log(state);
+  return (
+    <div className='app'>
+      <Search onChange={setState} onSearch={onSearch}/>
+    </div>
+  )
+}
+
+// write "I need +results" on input, then
+// open debug console:
+//{
+//  {
+//    "filters": [{ "type": "exact", "value": "results" }],
+//    "terms": ["I","need"]
+//  }
+//  "text": "I need +results"
+//}
+
+ReactDOM.render(<App/>, document.getElementById('root'))
+
+```
+Check out [github-page](https://fedemartinm.github.io/react-search-operators/) to see more examples!
+
+### Operators
+ - exact word or phrase
+ - exclude word
+ - match
+ - inverse match
+
+Complete documentation [here](https://github.com/fedemartinm/search-operators#operators).
 
 ### Props
 | Prop   | Type    | Description | Notes |
@@ -26,3 +84,7 @@ Minimum **confirmed** browser requirements to run React-Search-Operators. Testin
 | Chrome | Firefox | Safari | Opera | Edge | IE |
 |--------|---------|--------|-------|------|----|
 | 38     |    31   |   9.1  |   25  |  16  | 11 |
+
+## Licence 
+[MIT](https://github.com/fedemartinm/react-search-operators/blob/master/LICENSE) do whatever you want to do!
+
