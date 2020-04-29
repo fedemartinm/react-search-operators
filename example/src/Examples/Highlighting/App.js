@@ -12,7 +12,7 @@ const App = () => {
     <div className='app'>
       <Search
         suggestions={suggestions}
-        as={DraftInput}
+        as={DraftInput} //search as custom input
         parserOptions={parserOptions}
       />
     </div>

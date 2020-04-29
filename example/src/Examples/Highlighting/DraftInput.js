@@ -1,8 +1,13 @@
 import { Editor, EditorState, Modifier } from 'draft-js'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
+import ReactDOM from 'react-dom'
 import highlight from './highlight'
-import styles from './tokens'
+import tokenStyles from './tokens'
+
+//Limit text length to 128 ch
+//See DraftEditor-editorContainer in app.css
+const DRAFT_MAX_LENGTH = 128
 
 const DraftInput = React.forwardRef((props, ref) => {
   const {
@@ -21,18 +26,27 @@ const DraftInput = React.forwardRef((props, ref) => {
     tokens,
   } = props
 
-  const prevText = useRef()
-  const editorState = useRef(EditorState.createEmpty())
+  const editorRef = useRef()
+  const [state, setState] = useState(EditorState.createEmpty())
 
-  if (prevText.current !== text) {
-    editorState.current = highlight(editorState.current, tokens)
-    prevText.current = text
-  }
+  //Highlight syntax
+  useEffect(() => {
+    setState(highlight(state, tokens))
+  }, [JSON.stringify(tokens)])
 
+  //Fix scroll on delete all
+  useEffect(() => {
+    if (!text) {
+      const editorDiv = ReactDOM.findDOMNode(editorRef.current)
+      editorDiv.scroll(0, 0)
+    }
+  }, [text])
+
+  //Events
   const onChange = (newEditorState) => {
-    editorState.current = newEditorState
-    const nextText = newEditorState.getCurrentContent().getPlainText()
-    if (text !== nextText) onTextChange(nextText)
+    const text = newEditorState.getCurrentContent().getPlainText()
+    setState(newEditorState)
+    onTextChange(text)
   }
 
   const onReturn = () => {
@@ -40,19 +54,27 @@ const DraftInput = React.forwardRef((props, ref) => {
     return 'handled'
   }
 
+  const handleBeforeInput = (chars) => {
+    const totalLength =
+      state.getCurrentContent().getPlainText().length + chars.length
+    return totalLength > DRAFT_MAX_LENGTH
+  }
+
   return (
     <div ref={ref} className={className}>
       <Editor
+        ref={editorRef}
         className='editor'
-        customStyleMap={styles}
+        customStyleMap={tokenStyles}
         autoComplete={autoComplete}
         ariaActiveDescendantID={ariaActivedescendant}
         ariaAutoComplete={ariaAutoComplete}
         ariaControls={ariaControls}
-        editorState={editorState.current}
+        editorState={state}
         handleReturn={onReturn}
         handlePastedText={handleAsText(onChange)}
         stripPastedStyles={true}
+        handleBeforeInput={handleBeforeInput}
         onChange={onChange}
         onBlur={onBlur}
         onFocus={onFocus}
@@ -61,8 +83,15 @@ const DraftInput = React.forwardRef((props, ref) => {
   )
 })
 
+/**
+ * Format, limit text on paste
+ */
 function handleAsText(onChange) {
   return (text, html, state) => {
+    const currentLength = state.getCurrentContent().getPlainText().length
+    if (text.length + currentLength > DRAFT_MAX_LENGTH) {
+      text = text.slice(0, DRAFT_MAX_LENGTH - currentLength)
+    }
     const content = Modifier.replaceText(
       state.getCurrentContent(),
       state.getSelection(),
