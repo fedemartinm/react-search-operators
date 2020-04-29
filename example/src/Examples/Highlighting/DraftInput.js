@@ -33,6 +33,7 @@ const DraftInput = React.forwardRef((props, ref) => {
   //Highlight syntax
   useEffect(() => {
     setState(highlight(state, tokens))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hash])
 
   //Fix scroll on delete all
