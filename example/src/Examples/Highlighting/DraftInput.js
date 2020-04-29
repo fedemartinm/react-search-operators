@@ -31,7 +31,6 @@ const DraftInput = React.forwardRef((props, ref) => {
 
   const hash = JSON.stringify(tokens)
   //Highlight syntax
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setState(highlight(state, tokens))
   }, [hash])

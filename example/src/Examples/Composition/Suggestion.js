@@ -6,7 +6,7 @@ const navigate = () => {
 
 const Suggestion = ({ text }) => {
   return (
-    <a href='#' onMouseDown={navigate}>
+    <a href='/#' onMouseDown={navigate}>
       {text}
     </a>
   )

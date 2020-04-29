@@ -4,7 +4,7 @@ const Suggestions = App
 Suggestions.title = 'Controlled, advanced suggestions'
 Suggestions.description =
   'In this example we use a dynamic condition; suggestions are displayed ' +
-  'according to the applied operators. If user select a suggestion, we ' +
+  'according to the applied operators. If user selects a suggestion, we ' +
   'apply the related operator. To achieve this, we use the component ' +
   'in a controlled way.'
 

@@ -3,7 +3,7 @@ import App from './App'
 const Highlight = App
 Highlight.title = 'Highlighting - Draft'
 Highlight.description =
-  'Highlighting syntax in a text-area is expensive thing and React Search ' +
+  'Highlighting syntax in a text-area is an expensive thing and React Search ' +
   'Operators does not support syntax highlighting out of the box. ' +
   'However, we can do this using DraftJS! (Try with -exclude +include in:page not in:forum)'
 

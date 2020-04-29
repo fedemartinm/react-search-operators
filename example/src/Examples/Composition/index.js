@@ -3,7 +3,7 @@ import App from './App'
 const Composition = App
 Composition.title = 'Composition & Style'
 Composition.description =
-  "It' s possible to override default styles (theme prop) " +
+  "It's possible to override default styles (theme prop) " +
   'and default components (as and suggestionAs). In this example we overwrite ' +
   'the theme by adding light and dark modes.'
 Composition.source =
