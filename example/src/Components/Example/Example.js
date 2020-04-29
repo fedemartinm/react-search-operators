@@ -37,7 +37,7 @@ Example.defaultProps = {
 }
 
 Example.propTypes = {
-  component: PropTypes.element.isRequired,
+  component: PropTypes.elementType.isRequired,
 }
 
 export default Example
