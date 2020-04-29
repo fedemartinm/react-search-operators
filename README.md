@@ -68,7 +68,7 @@ Complete documentation [here](https://github.com/fedemartinm/search-operators#op
 |  parser    | function  |  replace default parser implementation  |  |
 |  parserOptions    | object  |  default parser options  | See default [search-opeartors](https://github.com/fedemartinm/search-operators#api) options. |
 |  suggestions    | array  |  search suggestions  | See [suggestions example](https://github.com/fedemartinm/react-search-operators/blob/master/example/src/Examples/Suggestions/App.js). |
-|  suggestionAs    | elementType  |  an element type to render as suggestion  | See  |
+|  suggestionAs    | elementType  |  an element type to render as suggestion  |   |
 |  id    | string    | IDs used in ARIA |  If component is used more than once to be sure each is unique.  |
 |  theme    | object, array    | style your search component  |  CSS Modules, Inline Styles, etc. See [react-themeable](https://github.com/markdalgleish/react-themeable) |
 |  placeholder    | string  | input placeholder text  |   |
