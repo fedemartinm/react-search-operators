@@ -1,5 +1,5 @@
 # React Search Operators
-Search component based on search-operators, where users can type search queries and apply filters.
+Search component based on [search-operators](https://github.com/fedemartinm/search-operators), where users can type search queries and apply filters.
 
 - complete set of operators 
 - sentence tokenization
