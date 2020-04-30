@@ -9,7 +9,7 @@ import tokenStyles from './tokens'
 //See DraftEditor-editorContainer in app.css
 const DRAFT_MAX_LENGTH = 128
 
-const DraftInput = React.forwardRef((props, ref) => {
+const DraftInput = (props) => {
   const {
     //autowhatever props
     'aria-activedescendant': ariaActivedescendant,
@@ -63,7 +63,7 @@ const DraftInput = React.forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={ref} className={className}>
+    <div className={className}>
       <Editor
         ref={editorRef}
         className='editor'
@@ -83,7 +83,7 @@ const DraftInput = React.forwardRef((props, ref) => {
       />
     </div>
   )
-})
+}
 
 /* eslint-disable no-control-regex */
 // Format, limit text on paste

@@ -1,0 +1,1 @@
+export { usePipe } from './usePipe'

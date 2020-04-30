@@ -1,6 +1,6 @@
+//import Autowhatever from 'react-autowhatever'
 import React from 'react'
-import styles from './styles.module.css'
+import Search from './components/Search'
+//import styles from './styles.module.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default (props) => <Search {...props} />
