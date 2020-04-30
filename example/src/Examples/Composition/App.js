@@ -15,6 +15,7 @@ const App = () => {
   return (
     <div className='app'>
       <Search
+        id='composition'
         theme={styles}
         suggestions={suggestions}
         suggestionAs={Suggestion}

@@ -35,6 +35,7 @@ const App = () => {
   return (
     <div className='app'>
       <Search
+        id='suggestions'
         text={text}
         onTextChange={setText}
         suggestions={suggestions}

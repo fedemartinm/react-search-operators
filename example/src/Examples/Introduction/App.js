@@ -9,7 +9,7 @@ const App = () => {
   const [state, setState] = useState({})
   return (
     <div className='app'>
-      <Search onChange={setState} />
+      <Search id='introduction' onChange={setState} />
       <pre>{JSON.stringify(state, null, 2)}</pre>
     </div>
   )

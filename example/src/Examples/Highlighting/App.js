@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div className='app'>
       <Search
+        id='highlighting'
         suggestions={suggestions}
         as={DraftInput} //search as custom input
         parserOptions={parserOptions}
