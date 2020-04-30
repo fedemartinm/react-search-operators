@@ -10,7 +10,7 @@ Search component based on [search-operators](https://github.com/fedemartinm/sear
 - highly customizable through composition
 
 
-Use this package when you want to parse a search query. If you don't need parse input and you need advanced features in suggestions maybe you are looking for [react-autosuggest](https://github.com/moroshko/react-autosuggest).
+Use this package when you want to parse a search query. If you don't need parse input but you need advanced features in suggestions maybe you are looking for [react-autosuggest](https://github.com/moroshko/react-autosuggest).
 
 ### Installation
 ```shell
