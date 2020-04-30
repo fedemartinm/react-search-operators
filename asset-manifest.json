@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-search-operators/static/css/main.a7516575.chunk.css",
-    "main.js": "/react-search-operators/static/js/main.4309b559.chunk.js",
-    "main.js.map": "/react-search-operators/static/js/main.4309b559.chunk.js.map",
+    "main.css": "/react-search-operators/static/css/main.fd51fae9.chunk.css",
+    "main.js": "/react-search-operators/static/js/main.f8c56d68.chunk.js",
+    "main.js.map": "/react-search-operators/static/js/main.f8c56d68.chunk.js.map",
     "runtime-main.js": "/react-search-operators/static/js/runtime-main.dc8b6b93.js",
     "runtime-main.js.map": "/react-search-operators/static/js/runtime-main.dc8b6b93.js.map",
-    "static/js/2.d7eec1b1.chunk.js": "/react-search-operators/static/js/2.d7eec1b1.chunk.js",
-    "static/js/2.d7eec1b1.chunk.js.map": "/react-search-operators/static/js/2.d7eec1b1.chunk.js.map",
+    "static/js/2.64080f4e.chunk.js": "/react-search-operators/static/js/2.64080f4e.chunk.js",
+    "static/js/2.64080f4e.chunk.js.map": "/react-search-operators/static/js/2.64080f4e.chunk.js.map",
     "index.html": "/react-search-operators/index.html",
-    "precache-manifest.ee4451e1fd3edcd2699dee48eadd49c8.js": "/react-search-operators/precache-manifest.ee4451e1fd3edcd2699dee48eadd49c8.js",
+    "precache-manifest.78c577e856d63311a3ed4387fbfa85e9.js": "/react-search-operators/precache-manifest.78c577e856d63311a3ed4387fbfa85e9.js",
     "service-worker.js": "/react-search-operators/service-worker.js",
-    "static/css/main.a7516575.chunk.css.map": "/react-search-operators/static/css/main.a7516575.chunk.css.map",
-    "static/js/2.d7eec1b1.chunk.js.LICENSE.txt": "/react-search-operators/static/js/2.d7eec1b1.chunk.js.LICENSE.txt",
-    "static/js/main.4309b559.chunk.js.LICENSE.txt": "/react-search-operators/static/js/main.4309b559.chunk.js.LICENSE.txt"
+    "static/css/main.fd51fae9.chunk.css.map": "/react-search-operators/static/css/main.fd51fae9.chunk.css.map",
+    "static/js/2.64080f4e.chunk.js.LICENSE.txt": "/react-search-operators/static/js/2.64080f4e.chunk.js.LICENSE.txt",
+    "static/js/main.f8c56d68.chunk.js.LICENSE.txt": "/react-search-operators/static/js/main.f8c56d68.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dc8b6b93.js",
-    "static/js/2.d7eec1b1.chunk.js",
-    "static/css/main.a7516575.chunk.css",
-    "static/js/main.4309b559.chunk.js"
+    "static/js/2.64080f4e.chunk.js",
+    "static/css/main.fd51fae9.chunk.css",
+    "static/js/main.f8c56d68.chunk.js"
   ]
 }
