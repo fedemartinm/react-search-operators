@@ -32,7 +32,6 @@ const Search = (props) => {
   const [state, setState] = useState({
     text: text ? text : '',
     parsed: [],
-    search: [],
     tokens: [],
     suggestions: [],
   })
