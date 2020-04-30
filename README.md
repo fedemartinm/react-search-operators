@@ -28,6 +28,7 @@ npm install react-search-operators --save
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import Search from 'react-search-operators'
+import 'react-search-operators/dist/index.css';
 
 const App = () => {
   const [state, setState] = useState({})
