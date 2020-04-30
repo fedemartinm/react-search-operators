@@ -1,3 +1,6 @@
+![npm](https://img.shields.io/npm/v/react-search-operators)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-search-operators?color=green)
+
 # React Search Operators
 Search component based on [search-operators](https://github.com/fedemartinm/search-operators), where users can type search queries and apply filters.
 
@@ -76,6 +79,68 @@ Complete documentation [here](https://github.com/fedemartinm/search-operators#op
 |  onSelect    | function  |  called when a suggestion is clicked |   |
 |  onChange    | function  |  called every time search is parsed  |   |
 |  onTextChange    | function  |  called every time search text change  | Use it on controlled implementations.  |
+
+### API
+
+#### Events:
+- onSearch(searchQuery)
+```js
+searchQuery: {
+  text, // search text
+  parsed, // ParseResult object
+  tokens, // Token array
+  suggestions //Suggestion array
+}
+```
+- onChange(searchParseResult)
+```js
+searchParseResult: {
+  text, // search text
+  parsed // ParseResult object
+}
+```
+
+- onSelect(suggestion)
+```js
+// user defined suggestion object
+```
+
+- onTextChange(text)
+```js
+// text string
+```
+
+#### Types:
+
+- ParseResult (default implementation)
+```js
+{
+  filters: [
+    { 
+      type, //one of 'match' | 'not-match' | 'exact' | 'exclude',
+      value, //value 
+      in //optional, used by match and not-match operator
+    }
+  ],
+  terms: [] // search terms
+}
+```
+
+
+- Token (default implementation)
+```js
+{
+  type, // token type, one of: TEXT, INCLUDE_WORD, EXCLUDE_WORD, EXACT_PHRASE, MATCH, NOT_MATCH,
+  value, // matched string
+  // Token location data
+  startOffset, 
+  endOffset, 
+  startLine,
+  endLine,
+  startColumn,
+  endColumn,
+}
+```
 
 ### Supported browsers
 Minimum **confirmed** browser requirements to run React-Search-Operators. Testing was done using the sample project.
